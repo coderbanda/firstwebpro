@@ -1,0 +1,43 @@
+<html>
+    <body>
+       <p id="yogesh"></p> 
+       <p id="yaya"></p>
+       <p id="yogi"></p>
+       <p id="yeah"></p>
+       <p id="yep"></p>
+       <p id="www"></p>
+       <p id="net"></p>
+       <p id="wild"></p>
+       <p id="happy"></p>
+       <p id="energy"></p>
+        <script>
+            var x=10;
+            var y=20;
+            var z=x+y;
+            var a=x*y;
+            var d=y**(x-1);
+            var e=16+9+"HELLO!!!";
+            var f="HELLO!!!"+16+4;
+            function myfun(v,w){return v*w;}
+            var net = {type:"Surface",reach:"99%"};
+                       var person= {firstName:"YOGESH",
+                       lastName:"GAUR",
+                       id:1816110248,
+            fullName:function(){return this.firstName+" "+this.lastName}
+            };
+            var p="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var q=p.length;
+            document.getElementById("yogesh").innerHTML = "PRODUCT IS:"+a;
+            document.getElementById("yaya").innerHTML = "SUM IS:"+z;
+            document.getElementById("yogi").innerHTML="POWER IS:"+d;
+            document.getElementById("yep").innerHTML="STRING LOOKS:"+f;
+            document.getElementById("yeah").innerHTML="STRING IS:"+e;
+            document.getElementById("www").innerHTML="FUNCTION CALL:"+myfun(23,3);
+            document.getElementById("net").innerHTML="NET REACH:"+net.reach;
+            document.getElementById("wild").innerHTML="NET TYPE:"+net["type"];
+            document.getElementById("wilds").innerHTML="NET TYPE:"+person["fullName"];
+            document.getElementById("energy").innerHTML= q;
+         </script>
+            <button onclick="document.getElementById('happy').innerHTML= Date()">Date and Time</button>
+    </body>
+</html>
